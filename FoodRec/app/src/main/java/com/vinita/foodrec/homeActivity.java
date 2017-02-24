@@ -14,13 +14,14 @@ public class homeActivity extends AppCompatActivity{
     String name, password, email, Err;
     TextView nameTV, emailTV, passwordTV, err;
 
-    Button btn = (Button)findViewById(R.id.home_camera);
+    Button btn;
 
             @Override
     protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_home);
 
+                btn = (Button)findViewById(R.id.home_camera);
                 nameTV = (TextView) findViewById(R.id.home_name);
                 emailTV = (TextView) findViewById(R.id.home_email);
                 passwordTV = (TextView) findViewById(R.id.home_password);
